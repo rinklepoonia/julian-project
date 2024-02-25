@@ -262,6 +262,10 @@
         background: linear-gradient(146.79deg, #F4EAD8 0%, #E0B764 97.77%);
         transition: all 300ms linear;
     }
+
+    .p_20 {
+        padding: 20px 0 0 20px;
+    }
 }
 
 /* =============hero============= */
@@ -548,19 +552,11 @@
 
 /* =================prize-winning-projects============ */
 .py-130 {
-    padding: 130px 0;
+    padding: 20px 0;
 }
 
 .max-w-198 {
     max-width: 198px;
-}
-
-.max-w-944 {
-    max-width: 944px;
-}
-
-.max-w-551 {
-    max-width: 551px;
 }
 
 .max-w-177 {
@@ -578,9 +574,6 @@
     margin-bottom: 12px;
 }
 
-.gap-32 {
-    gap: 32px;
-}
 
 .svgIcon_box {
     width: 40px;
@@ -590,13 +583,13 @@
     position: relative;
 }
 
-.svg_icon_position {
-    top: 92%;
+.svg_icon_position{
+    top: 94%;
     left: 50%;
 }
 
-.svg_icon_position2 {
-    top: 92%;
+.svg_icon_position2{
+    top: 94%;
     left: 55%;
 }
 
@@ -870,6 +863,10 @@
         padding: 50px 0;
     }
 
+    .py-130 {
+        padding: 50px 0;
+    }
+
     .translate_box {
         padding: 44px 51px 38px 51px;
     }
@@ -889,6 +886,10 @@
 }
 
 @media (min-width:992px) {
+    .gap-32 {
+        gap: 32px;
+    }
+
     .mt-48 {
         margin-top: 48px;
     }
@@ -915,6 +916,18 @@
 
     .py-100 {
         padding: 100px 0;
+    }
+
+    .py-130 {
+        padding: 130px 0;
+    }
+
+    .max-w-944 {
+        max-width: 944px;
+    }
+
+    .max-w-551 {
+        max-width: 551px;
     }
 
     :root {
@@ -970,9 +983,11 @@
         flex-wrap: wrap;
     }
 
-    .col_reverse {
+
+
+    /* .col_reverse {
         flex-flow: column-reverse;
-    }
+    } */
 
     .slider_box {
         padding: 10px;

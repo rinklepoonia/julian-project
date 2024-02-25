@@ -33,6 +33,7 @@ accordionHead.forEach((e) => {
 $('.responsive').slick({
     dots: false,
     infinite: true,
+    autoplay: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -46,14 +47,24 @@ $('.responsive').slick({
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false,
+                autoplay: false,
             }
         },
+        {
+            breakpoint: 768,
+            settings: {
+                autoplay: true,
+
+            }
+        },
+
         {
             breakpoint: 600,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                dots: false
+                dots: false,
+
             }
         },
         {

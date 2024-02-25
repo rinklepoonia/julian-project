@@ -444,6 +444,41 @@
 }
 
 /* =============corona========== */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.py-100 {
+    padding: 20px 0;
+}
+
+.pt_40 {
+    padding-top: 40px;
+}
+
+.second-position {
+    position: absolute;
+    bottom: -7%;
+    left: 0;
+}
+
+.first-position {
+    position: absolute;
+    bottom: -2%;
+    left: 11%;
+}
+
+.third-position {
+    position: absolute;
+    bottom: -7%;
+    left: 0;
+}
+
+.position-svg {
+    bottom: -53px;
+    right: -41%;
+}
+
 .bg_img_corona {
     background-image: url(/assets/svg.img/corona_bg_img.svg);
     background-position: center;
@@ -471,6 +506,11 @@
 
 .max-w-662 {
     max-width: 662px;
+}
+
+/* ===============corona-history========== */
+.pt-90 {
+    padding-top: 30px;
 }
 
 .history_box {
@@ -826,6 +866,10 @@
         padding: 50px 0;
     }
 
+    .py-100 {
+        padding: 50px 0;
+    }
+
     .translate_box {
         padding: 44px 51px 38px 51px;
     }
@@ -859,6 +903,18 @@
 
     .py-90 {
         padding: 90px 0;
+    }
+
+    .pt-90 {
+        padding-top: 90px;
+    }
+
+    .pt_lg_153 {
+        padding-top: 153px;
+    }
+
+    .py-100 {
+        padding: 100px 0;
     }
 
     :root {
@@ -899,7 +955,7 @@
     }
 
     .text-md {
-        font-size: var(--fs-s);
+        font-size: var(--fs-sm);
     }
 
     .leading-27 {

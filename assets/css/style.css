@@ -111,6 +111,10 @@
     font-size: var(--fs-xl);
 }
 
+.text-xxl48 {
+    font-size: var(--fs-xxl);
+}
+
 .text-lg {
     font-size: var(--fs-lg);
 }
@@ -161,6 +165,10 @@
 
 .leading-25 {
     line-height: 25.6px;
+}
+
+.leading-26 {
+    line-height: 26px;
 }
 
 .leading-32 {
@@ -314,6 +322,10 @@
     .mb-48 {
         margin-bottom: 20px;
     }
+
+    .flex_lg_wrap {
+        flex-wrap: wrap;
+    }
 }
 
 .cross span:nth-child(1) {
@@ -353,6 +365,23 @@
 }
 
 /* ================translate_box=========== */
+.golden_ellips {
+    width: 253px;
+    height: 253px;
+    background: linear-gradient(140.31deg, #FFE143 -11.21%, #F77B00 136.37%);
+    filter: blur(210px);
+}
+
+.position_history_ellips {
+    top: 18%;
+    left: 0;
+}
+
+.position_history_ellips2 {
+    top: 41%;
+    right: 0;
+}
+
 .mt-32 {
     margin-top: 32px;
 }
@@ -373,7 +402,6 @@
     background: var(--fc-white);
     position: relative;
 }
-
 
 .translate_box::after {
     content: "";
@@ -640,6 +668,9 @@
     background-size: cover;
     background-position: center;
 }
+.slick-dots li.slick-active button:before{
+    color: var(--fc-lightyellow);
+}
 
 .py-130 {
     padding: 20px 0;
@@ -719,8 +750,6 @@
     border-radius: 24px;
     padding: 1px;
     background: linear-gradient(146.79deg, #F4EAD8 0%, #E0B764 97.77%);
-    ;
-    /* border-image-source: linear-gradient(146.79deg, #F4EAD8 0%, #E0B764 97.77%); */
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
@@ -829,6 +858,10 @@
     margin-right: 48px;
 }
 
+.mt-48 {
+    margin-top: 40px;
+}
+
 .mb_83 {
     margin-bottom: 75px;
 }
@@ -926,11 +959,65 @@
     transition: all 300ms linear;
 }
 
+/* ===================navtabs-history================== */
+.navtab_bg_img {
+    background-image: url(/assets/png.img/navtabs2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.gap_144 {
+    gap: 144px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.py-125-156 {
+    padding: 30px 0 30px 0;
+}
+
+.max-w-762 {
+    max-width: 762px;
+}
+
+.border_navtab {
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    Padding: 24px;
+    border-color: #5E5E5E;
+    /* border-bottom: 1px solid #FFFFFF52 */
+}
+
+.Tabs.active svg path {
+    fill: url(#gradient);
+}
+
+.line .Tabs.active::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 2px;
+    padding: 0 8px 0 0;
+    background: linear-gradient(146.79deg, #F4EAD8 0%, #E0B764 97.77%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    transition: all 300ms linear;
+}
+
 /* =====================FAQ-acc=============== */
 .FAQ_bg_img {
     background-image: url(/assets/png.img/FAQ_acc_bg_img.svg);
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
+}
+
+.text_basline {
+    align-items: baseline !important;
 }
 
 .max-w-158 {
@@ -943,6 +1030,10 @@
 
 .max-w-558 {
     max-width: 558px;
+}
+
+.accordionHead {
+    cursor: pointer;
 }
 
 .accordionpara {
@@ -1184,6 +1275,14 @@ ul {
     .translate_box {
         transform: translateY(-90px);
     }
+
+    .py-125-156 {
+        padding: 50px 0 50px 0;
+    }
+
+    .pb_65 {
+        padding-bottom: 30px;
+    }
 }
 
 @media (min-width:768px) {
@@ -1230,6 +1329,18 @@ ul {
     .start_writing_box {
         padding: 18px 32px 18px 32px;
     }
+
+    .py-125-156 {
+        padding: 80px 0 80px 0;
+    }
+
+    .top_-24 {
+        top: -24px;
+    }
+
+    .bottom_0 {
+        bottom: 0;
+    }
 }
 
 @media (min-width:992px) {
@@ -1273,6 +1384,10 @@ ul {
         padding: 120px 0;
     }
 
+    .pb_65 {
+        padding-bottom: 65px;
+    }
+
     .pt_lg_153 {
         padding-top: 153px;
     }
@@ -1312,6 +1427,16 @@ ul {
     .mt-19 {
         margin-top: 19px;
     }
+
+    .navtab_bg_img {
+        background-image: url(/assets/svg.img/navtabs-bg-img.svg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .py-125-156 {
+        padding: 125px 0 156px 0;
+    }
 }
 
 @media (min-width:1400px) {
@@ -1326,7 +1451,6 @@ ul {
         top: 57%;
         left: 90%;
     }
-
 }
 
 @media (min-width:1200px) {
@@ -1337,6 +1461,7 @@ ul {
     .mb-28 {
         margin-bottom: 28px;
     }
+
 }
 
 @media (max-width:768px) {
@@ -1413,8 +1538,12 @@ ul {
     }
 
     .timeline_bono_line {
-        min-height: 1406px;
-        bottom: 81px;
+        min-height: 1388px;
+        top: 0;
+    }
+
+    .bottom_0 {
+        bottom: 0;
     }
 
     .max-h-86 {

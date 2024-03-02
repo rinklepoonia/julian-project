@@ -28,6 +28,25 @@ accordionHead.forEach((e) => {
     })
 })
 
+
+// navtabs_history_grident
+function navtabs_history(tab) {
+    const historyshow = document.querySelectorAll('.historyshow')
+    const tabbtn = document.querySelectorAll('.tab button')
+    historyshow.forEach(content => {
+        content.style.display = 'none'
+    })
+    const selecttoshow = document.getElementById(tab)
+    selecttoshow.style.display = 'block'
+}
+$(document).ready(function () {
+    $('.Tabs').on('click', function () {
+        $('.Tabs').removeClass('active');
+        $(this).addClass('active');
+    })
+});
+navtabs_history('tabhistory1')
+
 // ============slider=============
 $('.responsive').slick({
     dots: false,
@@ -45,7 +64,6 @@ $('.responsive').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: false,
                 autoplay: false,
             }
         },
@@ -53,7 +71,7 @@ $('.responsive').slick({
             breakpoint: 768,
             settings: {
                 autoplay: true,
-
+                dots: true,
             }
         },
 
@@ -62,15 +80,15 @@ $('.responsive').slick({
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                dots: false,
-
+                dots: true,
             }
         },
         {
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: true,
             }
         }
         // You can unslick at a given breakpoint now by adding:

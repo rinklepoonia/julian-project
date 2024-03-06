@@ -66,7 +66,7 @@ topBtn.addEventListener("click", function () {
 $('.responsive').slick({
     dots: false,
     infinite: true,
-    autoplay: true,
+    // autoplay: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -74,11 +74,22 @@ $('.responsive').slick({
     nextArrow: ".next",
     responsive: [
         {
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                autoplay: false,
+            }
+        },
+        {
             breakpoint: 1024,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
+                dots: true,
                 autoplay: false,
             }
         },
